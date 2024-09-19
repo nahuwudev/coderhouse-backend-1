@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "description": "High-quality wireless headphones with noise cancellation.",
+    "code": "BT-H1001",
+    "price": 99.99,
+    "status": true,
+    "stock": 150,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "title": "Smartphone Case - Black",
+    "description": "Durable and sleek case for smartphones.",
+    "code": "SC-B2002",
+    "price": 19.99,
+    "status": true,
+    "stock": 350,
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "title": "LED Monitor 24 inch",
+    "description": "Full HD LED monitor with vibrant colors and a slim design.",
+    "code": "LED-M3003",
+    "price": 149.99,
+    "status": true,
+    "stock": 75,
+    "category": "Electronics"
+  },
+  {
+    "id": 4,
+    "title": "Gaming Mouse",
+    "description": "Precision gaming mouse with customizable DPI settings.",
+    "code": "GM-M4004",
+    "price": 39.99,
+    "status": true,
+    "stock": 120,
+    "category": "Electronics"
+  },
+  {
+    "id": 5,
+    "title": "Portable Power Bank 10000mAh",
+    "description": "Compact and fast-charging power bank for all devices.",
+    "code": "PB-5005",
+    "price": 29.99,
+    "status": true,
+    "stock": 200,
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "title": "Smart Watch - Silver",
+    "description": "Smartwatch with fitness tracking and notifications.",
+    "code": "SW-S6006",
+    "price": 129.99,
+    "status": true,
+    "stock": 90,
+    "category": "Wearables"
+  },
+  {
+    "id": 7,
+    "title": "Laptop Cooling Pad",
+    "description": "Efficient cooling pad for laptops with adjustable fans.",
+    "code": "CP-L7007",
+    "price": 24.99,
+    "status": true,
+    "stock": 160,
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "title": "Ergonomic Office Chair",
+    "description": "Comfortable office chair with lumbar support.",
+    "code": "OC-E8008",
+    "price": 199.99,
+    "status": true,
+    "stock": 45,
+    "category": "Furniture"
+  },
+  {
+    "id": 9,
+    "title": "Wireless Keyboard and Mouse Combo",
+    "description": "Wireless keyboard and mouse set with long battery life.",
+    "code": "WC-M9009",
+    "price": 49.99,
+    "status": true,
+    "stock": 85,
+    "category": "Electronics"
+  },
+  {
+    "id": 10,
+    "title": "USB-C Charging Cable - 1m",
+    "description": "Fast-charging USB-C cable for smartphones and laptops.",
+    "code": "CC-U1010",
+    "price": 12.99,
+    "status": true,
+    "stock": 400,
+    "category": "Accessories"
+  },
+  {
+    "id": 11,
+    "title": "Noise Cancelling Earbuds",
+    "description": "Compact earbuds with active noise cancellation.",
+    "code": "NC-E1111",
+    "price": 79.99,
+    "status": true,
+    "stock": 180,
+    "category": "Electronics"
+  },
+  {
+    "id": 12,
+    "title": "Smart Light Bulb",
+    "description": "Wi-Fi-enabled smart light bulb with customizable colors.",
+    "code": "SL-B1212",
+    "price": 14.99,
+    "status": true,
+    "stock": 250,
+    "category": "Home"
+  },
+  {
+    "id": 13,
+    "title": "4K Action Camera",
+    "description": "Waterproof action camera with 4K recording.",
+    "code": "AC-4K1313",
+    "price": 199.99,
+    "status": true,
+    "stock": 65,
+    "category": "Cameras"
+  },
+  {
+    "id": 14,
+    "title": "Wireless Charger",
+    "description": "Fast wireless charger compatible with most smartphones.",
+    "code": "WC-W1414",
+    "price": 29.99,
+    "status": true,
+    "stock": 300,
+    "category": "Accessories"
+  },
+  {
+    "id": 15,
+    "title": "Fitness Tracker Band",
+    "description": "Track your daily activity and heart rate.",
+    "code": "FT-B1515",
+    "price": 49.99,
+    "status": true,
+    "stock": 130,
+    "category": "Wearables"
+  },
+  {
+    "id": 16,
+    "title": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with powerful sound.",
+    "code": "BS-P1616",
+    "price": 59.99,
+    "status": true,
+    "stock": 140,
+    "category": "Electronics"
+  },
+  {
+    "id": 17,
+    "title": "HDMI Cable - 2m",
+    "description": "High-speed HDMI cable for 4K resolution.",
+    "code": "HC-H1717",
+    "price": 9.99,
+    "status": true,
+    "stock": 320,
+    "category": "Accessories"
+  },
+  {
+    "id": 18,
+    "title": "Electric Kettle",
+    "description": "Stainless steel electric kettle with auto shut-off.",
+    "code": "EK-S1818",
+    "price": 29.99,
+    "status": true,
+    "stock": 110,
+    "category": "Home"
+  },
+  {
+    "id": 19,
+    "title": "Gaming Chair - Black/Red",
+    "description": "Comfortable gaming chair with adjustable height.",
+    "code": "GC-BR1919",
+    "price": 249.99,
+    "status": true,
+    "stock": 60,
+    "category": "Furniture"
+  },
+  {
+    "id": 20,
+    "title": "Laptop Stand",
+    "description": "Adjustable laptop stand for ergonomic positioning.",
+    "code": "LS-A2020",
+    "price": 39.99,
+    "status": true,
+    "stock": 90,
+    "category": "Accessories"
+  },
+  {
+    "id": 21,
+    "title": "Air Purifier",
+    "description": "Compact air purifier with HEPA filter for clean air.",
+    "code": "AP-H2121",
+    "price": 89.99,
+    "status": true,
+    "stock": 70,
+    "category": "Home"
+  },
+  {
+    "id": 22,
+    "title": "Wireless Earbuds with Charging Case",
+    "description": "True wireless earbuds with a compact charging case.",
+    "code": "WE-C2222",
+    "price": 59.99,
+    "status": true,
+    "stock": 160,
+    "category": "Electronics"
+  },
+  {
+    "id": 23,
+    "title": "Portable Speaker - Waterproof",
+    "description": "Waterproof portable speaker with powerful bass.",
+    "code": "PS-W2323",
+    "price": 69.99,
+    "status": true,
+    "stock": 100,
+    "category": "Electronics"
+  },
+  {
+    "id": 24,
+    "title": "Smart Thermostat",
+    "description": "Wi-Fi-enabled smart thermostat with energy-saving features.",
+    "code": "ST-W2424",
+    "price": 149.99,
+    "status": true,
+    "stock": 55,
+    "category": "Home"
+  },
+  {
+    "id": 25,
+    "title": "USB Flash Drive - 128GB",
+    "description": "High-speed USB 3.0 flash drive with 128GB storage.",
+    "code": "FD-1282525",
+    "price": 24.99,
+    "status": true,
+    "stock": 220,
+    "category": "Accessories"
+  },
+  {
+    "id": 26,
+    "title": "Noise-Cancelling Headphones",
+    "description": "Over-ear headphones with active noise cancellation.",
+    "code": "NC-H2626",
+    "price": 199.99,
+    "status": true,
+    "stock": 85,
+    "category": "Electronics"
+  },
+  {
+    "id": 27,
+    "title": "Smart Doorbell Camera",
+    "description": "Wi-Fi-enabled doorbell with HD camera and two-way audio.",
+    "code": "SD-C2727",
+    "price": 129.99,
+    "status": true,
+    "stock": 95,
+    "category": "Home"
+  },
+  {
+    "id": 28,
+    "title": "Laptop Backpack",
+    "description": "Durable backpack with multiple compartments for laptops and accessories.",
+    "code": "LB-B2828",
+    "price": 59.99,
+    "status": true,
+    "stock": 200,
+    "category": "Accessories"
+  },
+  {
+    "id": 29,
+    "title": "Electric Toothbrush",
+    "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+    "code": "ET-B2929",
+    "price": 49.99,
+    "status": true,
+    "stock": 140,
+    "category": "Home"
+  },
+  {
+    "id": 30,
+    "title": "Wi-Fi Range Extender",
+    "description": "Extend your Wi-Fi coverage with this powerful extender.",
+    "code": "RE-W3030",
+    "price": 39.99,
+    "status": true,
+    "stock": 180,
+    "category": "Electronics"
+  },
+  {
+    "id": 31,
+    "title": "Smartphone Holder for Car",
+    "description": "Adjustable smartphone holder for safe driving.",
+    "code": "SH-C3131",
+    "price": 14.99,
+    "status": true,
+    "stock": 350,
+    "category": "Accessories"
+  },
+  {
+    "id": 32,
+    "title": "Bluetooth Soundbar",
+    "description": "Compact soundbar with Bluetooth connectivity for rich sound.",
+    "code": "SB-B3232",
+    "price": 99.99,
+    "status": true,
+    "stock": 75,
+    "category": "Electronics"
+  },
+  {
+    "id": 33,
+    "title": "Wireless Earbuds - Sports Edition",
+    "description": "Sweatproof wireless earbuds designed for workouts.",
+    "code": "WE-S3333",
+    "price": 59.99,
+    "status": true,
+    "stock": 150,
+    "category": "Electronics"
+  },
+  {
+    "id": 34,
+    "title": "Smart LED Strip Lights",
+    "description": "Customizable LED strip lights with app control.",
+    "code": "LS-C3434",
+    "price": 29.99,
+    "status": true,
+    "stock": 240,
+    "category": "Home"
+  },
+  {
+    "id": 35,
+    "title": "Ergonomic Mouse Pad",
+    "description": "Mouse pad with wrist support for ergonomic comfort.",
+    "code": "MP-E3535",
+    "price": 12.99,
+    "status": true,
+    "stock": 330,
+    "category": "Accessories"
+  },
+  {
+    "id": 36,
+    "title": "Cordless Drill",
+    "description": "Powerful cordless drill with rechargeable battery.",
+    "code": "CD-R3636",
+    "price": 89.99,
+    "status": true,
+    "stock": 80,
+    "category": "Tools"
+  },
+  {
+    "id": 37,
+    "title": "Robot Vacuum Cleaner",
+    "description": "Smart robot vacuum with multiple cleaning modes.",
+    "code": "RV-C3737",
+    "price": 249.99,
+    "status": true,
+    "stock": 60,
+    "category": "Home"
+  },
+  {
+    "id": 38,
+    "title": "Gaming Headset",
+    "description": "Surround sound gaming headset with built-in microphone.",
+    "code": "GH-S3838",
+    "price": 79.99,
+    "status": true,
+    "stock": 90,
+    "category": "Electronics"
+  },
+  {
+    "id": 39,
+    "title": "Digital Photo Frame",
+    "description": "Wi-Fi-enabled digital photo frame with app control.",
+    "code": "DP-F3939",
+    "price": 99.99,
+    "status": true,
+    "stock": 70,
+    "category": "Home"
+  },
+  {
+    "id": 40,
+    "title": "USB-C Hub with 4 Ports",
+    "description": "Compact USB-C hub with 4 ports for easy connectivity.",
+    "code": "UC-H4040",
+    "price": 24.99,
+    "status": true,
+    "stock": 180,
+    "category": "Accessories"
+  },
+  {
+    "id": 41,
+    "title": "Portable Blender",
+    "description": "Compact and portable blender with rechargeable battery.",
+    "code": "PB-R4141",
+    "price": 39.99,
+    "status": true,
+    "stock": 120,
+    "category": "Home"
+  },
+  {
+    "id": 42,
+    "title": "Smart Door Lock",
+    "description": "Wi-Fi-enabled smart door lock with fingerprint sensor.",
+    "code": "DL-S4242",
+    "price": 199.99,
+    "status": true,
+    "stock": 45,
+    "category": "Home"
+  },
+  {
+    "id": 43,
+    "title": "USB Desk Fan",
+    "description": "Compact USB-powered desk fan with adjustable speed.",
+    "code": "DF-U4343",
+    "price": 19.99,
+    "status": true,
+    "stock": 220,
+    "category": "Accessories"
+  },
+  {
+    "id": 44,
+    "title": "HD Webcam",
+    "description": "HD webcam with built-in microphone for video conferencing.",
+    "code": "WC-H4444",
+    "price": 49.99,
+    "status": true,
+    "stock": 90,
+    "category": "Electronics"
+  },
+  {
+    "id": 45,
+    "title": "Portable Jump Starter",
+    "description": "Compact jump starter for cars with emergency flashlight.",
+    "code": "JS-P4545",
+    "price": 89.99,
+    "status": true,
+    "stock": 70,
+    "category": "Automotive"
+  },
+  {
+    "id": 46,
+    "title": "Electric Scooter",
+    "description": "Foldable electric scooter with long-lasting battery.",
+    "code": "ES-F4646",
+    "price": 399.99,
+    "status": true,
+    "stock": 40,
+    "category": "Outdoor"
+  },
+  {
+    "id": 47,
+    "title": "Outdoor Security Camera",
+    "description": "Weatherproof security camera with night vision.",
+    "code": "SC-W4747",
+    "price": 149.99,
+    "status": true,
+    "stock": 80,
+    "category": "Home"
+  },
+  {
+    "id": 48,
+    "title": "Portable Air Conditioner",
+    "description": "Portable air conditioner with adjustable fan speeds.",
+    "code": "AC-P4848",
+    "price": 299.99,
+    "status": true,
+    "stock": 50,
+    "category": "Home"
+  },
+  {
+    "id": 49,
+    "title": "Electric Bike",
+    "description": "Electric bike with pedal assist and long-range battery.",
+    "code": "EB-R4949",
+    "price": 999.99,
+    "status": true,
+    "stock": 30,
+    "category": "Outdoor"
+  },
+  {
+    "id": 50,
+    "title": "Portable Projector",
+    "description": "Compact portable projector with HD resolution.",
+    "code": "PJ-H5050",
+    "price": 199.99,
+    "status": true,
+    "stock": 55,
+    "category": "Electronics"
+  }
+]
