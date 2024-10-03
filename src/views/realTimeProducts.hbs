@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Products</title>
+  </head>
+  <body>
+    <h1>Real-time Product List</h1>
+
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Product  Name" required />
+      <input type="text" id="price" placeholder="Price" required />
+      <button type="submit">Add Product</button>
+    </form>
+
+    {{! Lista de productos }}
+    <ul id="productList"></ul>
+
+    {{! Socket  IO! >:3 }}
+
+    <script type="module">
+      import { io } from "https://cdn.socket.io/4.7.5/socket.io.esm.min.js";
+   const socket = io();
+        
+        const productForm = document.getElementById('productForm');
+        const productList = document.getElementById('productList');
+
+        // Enviar producto al servidor mediante websockets
+        productForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log('submit')
+            const name = document.getElementById('name').value;
+            const price = document.getElementById('price').value;
+            
+            socket.emit('newProduct', { name, price });
+        });
+
+        // Escuchar productos enviados por el servidor
+        socket.on('updateProducts', (products) => {
+            productList.innerHTML = '';
+            products.forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = `${product.name} - $${product.price}`;
+                
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Eliminar';
+                deleteButton.onclick = () => {
+                  socket.emit('deleteProduct', product.id)
+                }
+                li.appendChild(deleteButton)
+                productList.appendChild(li);
+            });
+        });
+
+        // Inicializar la lista de productos
+        socket.emit('getProducts');
+    </script>
+  </body>
+</html>
