@@ -6,10 +6,37 @@
   </head>
   <body>
     <h1>Product List</h1>
+    <a id="link">Visitar carrito!</a>
     <ul>
       {{#each products}}
         <li>{{this.title}} - ${{this.price}}</li>
+         <button onclick="addToCart('{{this._id}}')">
+            Agregar al carrito
+          </button>
       {{/each}}
     </ul>
+
+          <script>
+    const cartId = '671e87e4f650c631fcb91454'
+    const link = document.getElementById('link');
+    console.log(link)
+    link.href = `/carts/${cartId}`;
+
+     async function addToCart(productId) {
+        try {
+          const response = await fetch(`api/carts/${cartId}/product/${productId}`, {
+            method: 'POST',
+          });
+          if (response.ok) {
+            alert("Producto agregado al carrito");
+          } else {
+            alert("Error al agregar el producto al carrito");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert("Error al agregar el producto al carrito");
+        }
+      }
+  </script>
   </body>
 </html>

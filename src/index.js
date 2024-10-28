@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import { Server as SocketIO } from "socket.io";
@@ -7,18 +8,20 @@ import { fileURLToPath } from "url";
 import { router as productRouter } from "./routes/products.route.js";
 import { router as cartRouter } from "./routes/cart.route.js";
 import { viewsRouter } from "./routes/viewsRouter.js";
+import connectDb from "./db/connection.js";
+import productModel from "./db/models/product.model.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+connectDb();
 const httpServer = createServer(app);
 const io = new SocketIO(httpServer);
 
 app.engine("hbs", engine());
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
-
 
 /* 
 Debo usar la misma lista de productos que en el home?
@@ -30,10 +33,13 @@ aqui podria usar el service  para acceder a product
 pero no comprendo si esto es unicamente para entender el concepto de 
 WebSockets?
 */
-let products = [
-  { id: 1, name: "Product 1", price: 100 },
-  { id:2 , name: "Product 2", price: 150 },
-];
+
+const products = await productModel.find();
+
+/* 
+Deje un archivo .json de productos a modo 
+de rellenar una base de datos.
+*/
 
 io.on("connection", (socket) => {
   console.log("Cliente conectado", socket.id);
@@ -50,12 +56,12 @@ io.on("connection", (socket) => {
     socket.emit("updateProducts", products);
   });
 
-  socket.on('deleteProduct', async productId => {
-    console.log(productId)
+  socket.on("deleteProduct", async (productId) => {
+    console.log(productId);
     const findIndex = products.findIndex((prod) => prod.id === productId);
-    products.splice(findIndex, 1)
-    io.emit('updateProducts', products)
-  })
+    products.splice(findIndex, 1);
+    io.emit("updateProducts", products);
+  });
 });
 
 app.use(express.json());
